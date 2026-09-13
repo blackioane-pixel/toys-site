@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://api.qrserver.com; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self'">
+<meta name="description" content="Игрушки для развития мышления ребенка — подборка лучших развивающих игр и конструкторов для детей от 1 года до 8 лет.">
+<meta name="keywords" content="развивающие игрушки, детские игрушки, кубики, сортер, LEGO DUPLO, головоломки, развитие мышления">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#60a5fa">
+<meta property="og:title" content="Игрушки для развития мышления ребенка">
+<meta property="og:description" content="Подборка лучших развивающих игрушек для детей от 1 года до 8 лет">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://example.com/">
+<link rel="canonical" href="https://example.com/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧩</text></svg>">
+<title>Игрушки для развития мышления ребенка — каталог развивающих игр</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--primary:#60a5fa;--primary-dark:#3b82f6;--accent:#a78bfa;--success:#16a34a;--danger:#ef4444;--text:#1f2937;--muted:#6b7280;--bg:#fafafa;--border:#e5e7eb}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 2px 15px rgba(0,0,0,.06);z-index:100;padding:15px 0}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:20px}
+.logo{font-size:1.4rem;font-weight:800;color:var(--primary);cursor:pointer;transition:transform .2s;user-select:none}
+.logo:hover{transform:scale(1.05)}
+.menu{display:flex;gap:25px;align-items:center;list-style:none}
+.menu a{color:var(--text);text-decoration:none;font-weight:500;transition:color .2s;cursor:pointer}
+.menu a:hover{color:var(--primary)}
+.cart-btn{position:relative;background:var(--primary);color:#fff;border:none;padding:10px 18px;border-radius:25px;cursor:pointer;font-weight:600;font-size:.95rem;transition:background .2s,transform .2s;display:flex;align-items:center;gap:8px;font-family:inherit}
+.cart-btn:hover{background:var(--primary-dark);transform:translateY(-2px)}
+.cart-count{background:var(--danger);color:#fff;border-radius:50%;width:20px;height:20px;display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:bold}
+.hero{background:linear-gradient(135deg,#60a5fa,#a78bfa);color:#fff;padding:80px 20px;text-align:center;border-radius:0 0 40px 40px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-50%;right:-20%;width:500px;height:500px;background:rgba(255,255,255,.08);border-radius:50%}
+.hero::after{content:'';position:absolute;bottom:-30%;left:-10%;width:400px;height:400px;background:rgba(255,255,255,.06);border-radius:50%}
+.hero-content{position:relative;z-index:1;max-width:800px;margin:0 auto}
+.hero h1{font-size:clamp(2rem,5vw,3.5rem);margin-bottom:15px;font-weight:800;line-height:1.15}
+.hero p{font-size:clamp(1rem,2vw,1.2rem);opacity:.95;margin-bottom:25px}
+.hero-btn{background:#fff;color:var(--primary-dark);border:none;padding:14px 35px;border-radius:30px;font-size:1rem;font-weight:700;cursor:pointer;transition:transform .2s,box-shadow .2s;font-family:inherit}
+.hero-btn:hover{transform:scale(1.05);box-shadow:0 10px 25px rgba(0,0,0,.2)}
+section{padding:70px 0}
+.section-title{font-size:clamp(1.5rem,3vw,2.2rem);margin-bottom:15px;text-align:center;color:#1e40af;font-weight:800}
+.section-subtitle{text-align:center;color:var(--muted);margin-bottom:40px;font-size:1.05rem}
+.features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.feature{background:#fff;padding:30px 22px;border-radius:18px;box-shadow:0 4px 20px rgba(0,0,0,.06);text-align:center;transition:transform .3s,box-shadow .3s}
+.feature:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(0,0,0,.12)}
+.feature-icon{font-size:3rem;margin-bottom:15px;display:block}
+.feature h3{color:#1e40af;margin-bottom:10px;font-size:1.15rem}
+.feature p{color:var(--muted);font-size:.92rem}
+.filters{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:35px}
+.filter-btn{background:#fff;border:2px solid var(--border);padding:8px 20px;border-radius:25px;cursor:pointer;font-weight:600;font-size:.9rem;transition:all .2s;color:var(--text);font-family:inherit}
+.filter-btn:hover{border-color:var(--primary);color:var(--primary)}
+.filter-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.toys-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:25px}
+.toy{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 20px rgba(0,0,0,.08);transition:transform .3s,box-shadow .3s;display:flex;flex-direction:column;animation:fadeIn .4s ease}
+@keyframes fadeIn{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:translateY(0)}}
+.toy:hover{transform:translateY(-8px);box-shadow:0 16px 35px rgba(0,0,0,.14)}
+.toy-emoji{font-size:4.5rem;text-align:center;padding:35px 20px;background:linear-gradient(135deg,#dbeafe,#fef3c7);transition:transform .3s}
+.toy:hover .toy-emoji{transform:scale(1.1) rotate(-3deg)}
+.toy-body{padding:22px;display:flex;flex-direction:column;flex:1}
+.toy-body h3{color:#1e40af;margin-bottom:8px;font-size:1.1rem}
+.toy-body p{color:var(--muted);font-size:.9rem;margin-bottom:14px;flex:1}
+.toy-price{font-weight:800;color:#059669;font-size:1.3rem;margin-bottom:12px}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:15px}
+.tag{background:#e0e7ff;color:#4338ca;padding:4px 10px;border-radius:20px;font-size:.72rem;font-weight:600}
+.add-btn{width:100%;background:var(--primary);color:#fff;border:none;padding:12px;border-radius:10px;cursor:pointer;font-weight:700;font-size:.95rem;transition:background .2s,transform .1s;font-family:inherit}
+.add-btn:hover{background:var(--primary-dark)}
+.add-btn:active{transform:scale(.97)}
+.cta{background:linear-gradient(135deg,#60a5fa,#a78bfa);color:#fff;padding:60px 30px;text-align:center;border-radius:30px;margin:40px 0}
+.cta h2{color:#fff;font-size:clamp(1.5rem,3vw,2rem);margin-bottom:12px}
+.cta p{opacity:.95;margin-bottom:25px;font-size:1.05rem}
+.cta button{background:#fff;color:#4338ca;border:none;padding:14px 40px;border-radius:30px;font-size:1rem;font-weight:700;cursor:pointer;transition:transform .2s,box-shadow .2s;font-family:inherit}
+.cta button:hover{transform:scale(1.05);box-shadow:0 10px 25px rgba(0,0,0,.2)}
+footer{background:#1e3a8a;color:#fff;padding:40px 20px 25px;border-radius:30px 30px 0 0;margin-top:60px}
+.footer-content{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:30px;text-align:center}
+.footer-col h4{margin-bottom:12px;font-size:1.05rem}
+.footer-col p,.footer-col a{color:#c7d2fe;text-decoration:none;font-size:.9rem;line-height:1.9;cursor:pointer}
+.footer-col a:hover{color:#fff}
+.copyright{text-align:center;margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.15);font-size:.85rem;opacity:.8}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;justify-content:center;align-items:center;z-index:1000;padding:20px;animation:fadeIn .2s}
+.modal.active{display:flex}
+.modal-content{background:#fff;border-radius:20px;max-width:500px;width:100%;max-height:85vh;overflow-y:auto;padding:30px;position:relative;animation:slideUp .3s ease}
+@keyframes slideUp{from{transform:translateY(30px);opacity:0}to{transform:translateY(0);opacity:1}}
+.modal-close{position:absolute;top:15px;right:20px;font-size:1.8rem;cursor:pointer;color:var(--muted);background:none;border:none;line-height:1;transition:color .2s;font-family:inherit}
+.modal-close:hover{color:var(--danger)}
+.modal-content h2{color:#1e40af;margin-bottom:15px;padding-right:30px}
+.cart-item{display:flex;justify-content:space-between;align-items:center;padding:12px 0;border-bottom:1px solid var(--border);gap:10px}
+.cart-item-info{flex:1}
+.cart-item-info strong{display:block;font-size:.95rem}
+.cart-item-info small{color:var(--muted);font-size:.85rem}
+.cart-item-actions{display:flex;align-items:center;gap:8px}
+.qty-btn{background:var(--border);border:none;width:28px;height:28px;border-radius:50%;cursor:pointer;font-weight:bold;transition:background .2s;font-family:inherit}
+.qty-btn:hover{background:var(--primary);color:#fff}
+.cart-total{font-size:1.2rem;font-weight:800;text-align:right;margin-top:20px;padding-top:15px;border-top:2px solid var(--border)}
+.checkout-btn{width:100%;background:var(--success);color:#fff;border:none;padding:14px;border-radius:10px;cursor:pointer;font-weight:700;font-size:1rem;margin-top:15px;transition:background .2s;font-family:inherit}
+.checkout-btn:hover{background:#15803d}
+.checkout-btn:disabled{background:#9ca3af;cursor:not-allowed}
+.payment-methods{display:flex;flex-direction:column;gap:10px;margin:15px 0}
+.payment-option{display:flex;align-items:center;gap:12px;padding:14px;border:2px solid var(--border);border-radius:10px;cursor:pointer;transition:all .2s}
+.payment-option:hover{border-color:var(--primary);background:#f0f9ff}
+.payment-option.selected{border-color:var(--primary);background:#eff6ff;box-shadow:0 0 0 3px rgba(96,165,250,.2)}
+.payment-option input{accent-color:var(--primary);width:18px;height:18px;cursor:pointer}
+.payment-info strong{display:block;font-size:.95rem}
+.payment-info small{color:var(--muted);font-size:.82rem}
+.sbp-block{display:none;text-align:center;padding:15px;background:#f9fafb;border-radius:10px;margin:15px 0}
+.sbp-block.visible{display:block}
+.sbp-block img{max-width:180px;margin:10px auto;display:block;background:#fff;padding:8px;border-radius:8px}
+.sbp-block p{font-size:.88rem;color:#4b5563;margin-bottom:8px}
+.form-field{margin-bottom:12px}
+.form-field label{display:block;font-weight:600;font-size:.9rem;margin-bottom:6px}
+.form-field input,.form-field textarea{width:100%;padding:10px 12px;border:1px solid #d1d5db;border-radius:8px;font-family:inherit;font-size:.95rem;transition:border-color .2s,box-shadow .2s}
+.form-field input:focus,.form-field textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(96,165,250,.2)}
+.empty-cart{text-align:center;padding:30px 10px;color:var(--muted)}
+.empty-cart .emoji{font-size:3rem;display:block;margin-bottom:10px}
+.toast{position:fixed;bottom:25px;right:25px;background:var(--primary);color:#fff;padding:14px 22px;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,.2);transform:translateY(150%);transition:transform .3s ease;z-index:2000;font-weight:600;font-size:.95rem;max-width:320px}
+.toast.show{transform:translateY(0)}
+.toast.success{background:var(--success)}
+.toast.error{background:var(--danger)}
+.burger{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;color:var(--text);font-family:inherit}
+.skip-link{position:absolute;top:-40px;left:0;background:var(--primary);color:#fff;padding:8px 16px;text-decoration:none;z-index:2000;border-radius:0 0 8px 0}
+.skip-link:focus{top:0}
+@media(max-width:768px){
+.burger{display:block}
+.menu{position:fixed;top:70px;left:0;right:0;background:#fff;flex-direction:column;padding:20px;box-shadow:0 10px 25px rgba(0,0,0,.1);transform:translateY(-150%);transition:transform .3s;gap:15px}
+.menu.open{transform:translateY(0)}
+.hero{padding:50px 20px}
+section{padding:45px 0}
+.footer-content{grid-template-columns:1fr}
+.toast{left:20px;right:20px;bottom:20px;max-width:none}
+}
+@media(max-width:400px){.toys-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+
+<a href="#catalog" class="skip-link">Перейти к каталогу</a>
+
+<header>
+<nav class="nav container" role="navigation" aria-label="Главное меню">
+<div class="logo" onclick="scrollToSection('about')" role="button" tabindex="0">🧩 УмныеИгрушки</div>
+<button class="burger" onclick="toggleMenu()" aria-label="Открыть меню" aria-expanded="false" id="burgerBtn">☰</button>
+<ul class="menu" id="menu" role="menubar">
+<li role="none"><a onclick="scrollToSection('about')" role="menuitem">О нас</a></li>
+<li role="none"><a onclick="scrollToSection('catalog')" role="menuitem">Каталог</a></li>
+<li role="none"><a onclick="scrollToSection('features')" role="menuitem">Преимущества</a></li>
+<li role="none"><a onclick="scrollToSection('contacts')" role="menuitem">Контакты</a></li>
+</ul>
+<button class="cart-btn" onclick="openCart()" aria-label="Открыть корзину">
+🛒 Корзина <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+</button>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="about">
+<div class="hero-content">
+<h1>Игрушки для развития мышления ребенка</h1>
+<p>Помогаем детям расти умными и любознательными. Подборка лучших развивающих игр для каждого возраста — от первых кубиков до инженерных конструкторов.</p>
+<button class="hero-btn" onclick="scrollToSection('catalog')">Смотреть каталог →</button>
+</div>
+</section>
+
+<section id="features">
+<div class="container">
+<h2 class="section-title">Почему это важно?</h2>
+<p class="section-subtitle">Развивающие игрушки формируют ключевые навыки ребенка</p>
+<div class="features">
+<div class="feature"><span class="feature-icon" aria-hidden="true">🧠</span><h3>Логика</h3><p>Головоломки и конструкторы учат думать, анализировать и находить решения</p></div>
+<div class="feature"><span class="feature-icon" aria-hidden="true">✋</span><h3>Моторика</h3><p>Мелкая моторика напрямую связана с развитием речи и мышления</p></div>
+<div class="feature"><span class="feature-icon" aria-hidden="true">🎨</span><h3>Творчество</h3><p>Свободная игра развивает воображение и креативное мышление</p></div>
+<div class="feature"><span class="feature-icon" aria-hidden="true">👨‍👩‍👧</span><h3>Общение</h3><p>Совместные игры с родителями укрепляют связь и учат взаимодействию</p></div>
+</div>
+</div>
+</section>
+
+<section id="catalog" style="background:#fff">
+<div class="container">
+<h2 class="section-title">Каталог игрушек</h2>
+<p class="section-subtitle">Выберите возраст и найдите идеальный подарок</p>
+<div class="filters" role="tablist" aria-label="Фильтр по возрасту">
+<button class="filter-btn active" data-filter="all" onclick="filterToys('all',this)" role="tab" aria-selected="true">Все</button>
+<button class="filter-btn" data-filter="1" onclick="filterToys('1',this)" role="tab" aria-selected="false">1+ год</button>
+<button class="filter-btn" data-filter="2" onclick="filterToys('2',this)" role="tab" aria-selected="false">2+ года</button>
+<button class="filter-btn" data-filter="3" onclick="filterToys('3',this)" role="tab" aria-selected="false">3+ года</button>
+<button class="filter-btn" data-filter="4" onclick="filterToys('4',this)" role="tab" aria-selected="false">4+ года</button>
+<button class="filter-btn" data-filter="5" onclick="filterToys('5',this)" role="tab" aria-selected="false">5+ лет</button>
+<button class="filter-btn" data-filter="6" onclick="filterToys('6',this)" role="tab" aria-selected="false">6+ лет</button>
+<button class="filter-btn" data-filter="8" onclick="filterToys('8',this)" role="tab" aria-selected="false">8+ лет</button>
+</div>
+<div class="toys-grid" id="toysGrid" role="tabpanel"></div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="cta">
+<h2>Не знаете, что выбрать?</h2>
+<p>Свяжитесь с нами — поможем подобрать игрушку под возраст и интересы ребенка</p>
+<button onclick="scrollToSection('contacts')">Связаться →</button>
+</div>
+</div>
+</section>
+</main>
+
+<footer id="contacts">
+<div class="footer-content">
+<div class="footer-col">
+<h4>🧩 УмныеИгрушки</h4>
+<p>Развивающие игрушки для детей от 1 года до 8 лет. Помогаем родителям выбирать полезные подарки.</p>
+</div>
+<div class="footer-col">
+<h4>Контакты</h4>
+<p>📧 tsurioane@mail.ru</p>
+<p>📞 +7 (996) 123-45-67</p>
+<p>📍 Москва, ул. Детская, 15</p>
+</div>
+<div class="footer-col">
+<h4>Разделы</h4>
+<p><a onclick="scrollToSection('about')">О нас</a></p>
+<p><a onclick="scrollToSection('catalog')">Каталог</a></p>
+<p><a onclick="scrollToSection('features')">Преимущества</a></p>
+</div>
+</div>
+<p class="copyright">© 2026 УмныеИгрушки. Все права защищены. Развиваем детей с любовью ❤️</p>
+</footer>
+
+<div class="modal" id="cartModal" onclick="closeModalOnBg(event,'cartModal')" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+<div class="modal-content" onclick="event.stopPropagation()">
+<button class="modal-close" onclick="closeModal('cartModal')" aria-label="Закрыть">×</button>
+<h2 id="cartTitle">🛒 Ваша корзина</h2>
+<div id="cartContent"></div>
+</div>
+</div>
+
+<div class="modal" id="checkoutModal" onclick="closeModalOnBg(event,'checkoutModal')" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+<div class="modal-content" onclick="event.stopPropagation()">
+<button class="modal-close" onclick="closeModal('checkoutModal')" aria-label="Закрыть">×</button>
+<h2 id="checkoutTitle">Оформление заказа</h2>
+<form id="checkoutForm" onsubmit="submitOrder(event)" novalidate>
+<div class="form-field">
+<label for="name">Ваше имя</label>
+<input type="text" id="name" required placeholder="Иван Иванов" maxlength="100" autocomplete="name">
+</div>
+<div class="form-field">
+<label for="phone">Телефон</label>
+<input type="tel" id="phone" required placeholder="+7 (___) ___-__-__" maxlength="20" autocomplete="tel">
+</div>
+<div class="form-field">
+<label for="address">Адрес доставки</label>
+<textarea id="address" rows="2" required placeholder="Город, улица, дом, квартира" maxlength="300" autocomplete="street-address"></textarea>
+</div>
+<label style="font-weight:600;font-size:.9rem;display:block;margin-bottom:8px">Способ оплаты</label>
+<div class="payment-methods">
+<label class="payment-option selected" data-method="cash">
+<input type="radio" name="payment" value="cash" checked onchange="updatePayment()">
+<div class="payment-info">
+<strong>💵 Оплата при получении</strong>
+<small>Наличными или картой курьеру</small>
+</div>
+</label>
+<label class="payment-option" data-method="sbp">
+<input type="radio" name="payment" value="sbp" onchange="updatePayment()">
+<div class="payment-info">
+<strong>📱 Оплата по СБП</strong>
+<small>Перевод по QR-коду через банк</small>
+</div>
+</label>
+</div>
+<div class="sbp-block" id="sbpBlock">
+<p>Отсканируйте QR-код в приложении банка:</p>
+<img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=SBP-DEMO-PAYMENT" alt="QR-код для оплаты по СБП" loading="lazy" width="180" height="180">
+<p>После оплаты нажмите «Я оплатил»</p>
+</div>
+<div class="cart-total" id="checkoutTotal">Итого: 0 ₽</div>
+<button type="submit" class="checkout-btn" id="payBtn">Подтвердить заказ</button>
+</form>
+</div>
+</div>
+
+<div class="toast" id="toast" role="alert" aria-live="assertive"></div>
+
+<script>
+'use strict';
+
+// ============ СОСТОЯНИЕ ПРИЛОЖЕНИЯ (Reactive Store) ============
+const store = {
+  state: {
+    cart: [],
+    filter: 'all',
+    products: [
+      {id:1, emoji:'🧱', name:'Деревянные кубики', price:490, age:1, tags:['Моторика','Цвета'], desc:'Классика для самых маленьких — учим цвета, формы и координацию.'},
+      {id:2, emoji:'🎯', name:'Интерактивный сортер', price:1290, age:2, tags:['Логика','Формы'], desc:'Музыкальная игрушка для изучения форм и цветов в игровой форме.'},
+      {id:3, emoji:'🧱', name:'Конструктор LEGO DUPLO', price:2490, age:3, tags:['Воображение','Моторика'], desc:'Крупные безопасные детали для развития пространственного мышления.'},
+      {id:4, emoji:'🦁', name:'Магнитный пазл «Животные»', price:890, age:4, tags:['Память','Внимание'], desc:'Собираем зверей из магнитных деталей — учим животных и тренируем память.'},
+      {id:5, emoji:'🧲', name:'Научный набор «Магнетизм»', price:3990, age:6, tags:['Наука','Логика'], desc:'Мини-лаборатория для юного исследователя — опыты с магнитами.'},
+      {id:6, emoji:'🏗️', name:'Игра-балансир «Дженга»', price:1490, age:4, tags:['Внимание','Стратегия'], desc:'Семейная игра на концентрацию, стратегию и чувство равновесия.'},
+      {id:7, emoji:'✏️', name:'Планшет для рисования', price:2490, age:3, tags:['Творчество','Фантазия'], desc:'Многоразовая LCD-доска — рисуй, стирай и твори без бумаги.'},
+      {id:8, emoji:'🌀', name:'Настольный лабиринт', price:1190, age:5, tags:['Координация','Терпение'], desc:'Проведи шарик по дорожкам — тренируем точность и терпение.'},
+      {id:9, emoji:'🤖', name:'Набор для сборки робота', price:4990, age:8, tags:['Инженерия','Программирование'], desc:'Инженерный конструктор с моторами и датчиками для юных техников.'},
+      {id:10, emoji:'🔷', name:'Набор геометрических фигур', price:1190, age:3, tags:['Формы','Мышление'], desc:'Объёмные фигуры для изучения форм, размеров и цветов.'},
+      {id:11, emoji:'🃏', name:'Карточки «Английский язык»', price:590, age:4, tags:['Речь','Память'], desc:'Яркие карточки для первого знакомства с иностранным языком.'},
+      {id:12, emoji:'🔺', name:'Головоломка Танграм', price:390, age:5, tags:['Геометрия','Мышление'], desc:'Древняя китайская игра для развития абстрактного мышления.'}
+    ]
+  },
+  listeners: [],
+  subscribe(fn){ this.listeners.push(fn); },
+  setState(patch){
+    Object.assign(this.state, patch);
+    this.listeners.forEach(fn => fn(this.state));
+  }
+};
+
+// ============ БЕЗОПАСНОСТЬ: sanitize ============
+const sanitize = str => String(str).replace(/[<>"'&]/g, c => ({'<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;','&':'&amp;'}[c]));
+const $ = id => document.getElementById(id);
+const formatPrice = p => Number(p).toLocaleString('ru-RU') + ' ₽';
+
+// ============ АСИНХРОННОСТЬ: имитация API ============
+const api = {
+  saveOrder: async (order) => {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        if(!order.name || !order.phone || !order.address){
+          reject(new Error('Не все поля заполнены'));
+          return;
+        }
+        resolve({ok: true, orderId: 'ORD-' + Date.now(), ...order});
+      }, 800);
+    });
+  }
+};
+
+// ============ DOM: рендер каталога ============
+function renderToys(){
+  const {products, filter} = store.state;
+  const filtered = filter === 'all' ? products : products.filter(p => p.age === parseInt(filter, 10));
+  const grid = $('toysGrid');
+  
+  if(filtered.length === 0){
+    grid.innerHTML = '<p style="grid-column:1/-1;text-align:center;color:#6b7280;padding:40px">Товаров не найдено</p>';
+    return;
+  }
+  
+  grid.innerHTML = filtered.map(p => `
+    <article class="toy" role="article">
+      <div class="toy-emoji" aria-hidden="true">${p.emoji}</div>
+      <div class="toy-body">
+        <h3>${sanitize(p.name)}</h3>
+        <p>${sanitize(p.desc)}</p>
+        <div class="toy-price">${formatPrice(p.price)}</div>
+        <div class="tags">
+          <span class="tag">${p.age}+ лет</span>
+          ${p.tags.map(t => `<span class="tag">${sanitize(t)}</span>`).join('')}
+        </div>
+        <button class="add-btn" onclick="addToCart(${p.id})" aria-label="Добавить ${sanitize(p.name)} в корзину">Добавить в корзину</button>
+      </div>
+    </article>
+  `).join('');
+}
+
+// ============ DOM: корзина ============
+function renderCart(){
+  const {cart} = store.state;
+  const content = $('cartContent');
+  const totalCount = cart.reduce((s,i) => s + i.qty, 0);
+  $('cartCount').textContent = totalCount;
+  
+  if(cart.length === 0){
+    content.innerHTML = `
+      <div class="empty-cart">
+        <span class="emoji" aria-hidden="true">🛒</span>
+        <p>Корзина пуста</p>
+        <p style="font-size:.85rem;margin-top:8px">Добавьте товары из каталога</p>
+      </div>`;
+    return;
+  }
+  
+  const total = cart.reduce((s,i) => s + i.price * i.qty, 0);
+  content.innerHTML = `
+    ${cart.map(i => `
+      <div class="cart-item">
+        <div class="cart-item-info">
+          <strong>${sanitize(i.name)}</strong>
+          <small>${formatPrice(i.price)} × ${i.qty} = ${formatPrice(i.price * i.qty)}</small>
+        </div>
+        <div class="cart-item-actions">
+          <button class="qty-btn" onclick="changeQty(${i.id},-1)" aria-label="Уменьшить количество">−</button>
+          <span style="min-width:20px;text-align:center;font-weight:600">${i.qty}</span>
+          <button class="qty-btn" onclick="changeQty(${i.id},1)" aria-label="Увеличить количество">+</button>
+        </div>
+      </div>
+    `).join('')}
+    <div class="cart-total">Итого: ${formatPrice(total)}</div>
+    <button class="checkout-btn" onclick="openCheckout()">Перейти к оплате →</button>
+  `;
+}
+
+// ============ Действия ============
+function addToCart(id){
+  const product = store.state.products.find(p => p.id === id);
+  if(!product) return;
+  const cart = [...store.state.cart];
+  const existing = cart.find(i => i.id === id);
+  if(existing){
+    existing.qty++;
+  } else {
+    cart.push({...product, qty: 1});
+  }
+  store.setState({cart});
+  showToast(`"${product.name}" добавлен в корзину!`, 'success');
+}
+
+function changeQty(id, delta){
+  let cart = [...store.state.cart];
+  const item = cart.find(i => i.id === id);
+  if(!item) return;
+  item.qty += delta;
+  if(item.qty <= 0) cart = cart.filter(i => i.id !== id);
+  store.setState({cart});
+}
+
+function filterToys(filter, btn){
+  store.setState({filter});
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    b.classList.remove('active');
+    b.setAttribute('aria-selected', 'false');
+  });
+  btn.classList.add('active');
+  btn.setAttribute('aria-selected', 'true');
+}
+
+// ============ Модальные окна ============
+function openCart(){
+  renderCart();
+  $('cartModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal(id){
+  $(id).classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+function closeModalOnBg(e, id){
+  if(e.target.id === id) closeModal(id);
+}
+
+function openCheckout(){
+  if(store.state.cart.length === 0){
+    showToast('Корзина пуста — добавьте товары', 'error');
+    return;
+  }
+  const total = store.state.cart.reduce((s,i) => s + i.price * i.qty, 0);
+  $('checkoutTotal').textContent = `Итого: ${formatPrice(total)}`;
+  closeModal('cartModal');
+  $('checkoutModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function updatePayment(){
+  const method = document.querySelector('input[name="payment"]:checked').value;
+  document.querySelectorAll('.payment-option').forEach(opt => {
+    opt.classList.toggle('selected', opt.dataset.method === method);
+  });
+  const sbpBlock = $('sbpBlock');
+  const payBtn = $('payBtn');
+  if(method === 'sbp'){
+    sbpBlock.classList.add('visible');
+    payBtn.textContent = 'Я оплатил';
+  } else {
+    sbpBlock.classList.remove('visible');
+    payBtn.textContent = 'Подтвердить заказ';
+  }
+}
+
+// ============ Отправка заказа (async) ============
+async function submitOrder(e){
+  e.preventDefault();
+  
+  const name = $('name').value.trim();
+  const phone = $('phone').value.trim();
+  const address = $('address').value.trim();
+  const method = document.querySelector('input[name="payment"]:checked').value;
+  
+  if(name.length < 2){ showToast('Введите корректное имя', 'error'); return; }
+  if(!/^[\d\s()+\-]{10,20}$/.test(phone)){ showToast('Введите корректный телефон', 'error'); return; }
+  if(address.length < 5){ showToast('Введите корректный адрес', 'error'); return; }
+  
+  const payBtn = $('payBtn');
+  payBtn.disabled = true;
+  payBtn.textContent = 'Обработка...';
+  
+  try {
+    const result = await api.saveOrder({name, phone, address, method, cart: store.state.cart});
+    closeModal('checkoutModal');
+    $('checkoutForm').reset();
+    updatePayment();
+    
+    const text = method === 'sbp' 
+      ? `Спасибо, ${sanitize(name)}! Оплата по СБП получена. Заказ ${result.orderId} оформлен.`
+      : `Спасибо, ${sanitize(name)}! Заказ ${result.orderId} оформлен. Оплата при получении.`;
+    
+    showToast(text, 'success');
+    store.setState({cart: []});
+  } catch(err){
+    showToast('Ошибка: ' + err.message, 'error');
+  } finally {
+    payBtn.disabled = false;
+    payBtn.textContent = document.querySelector('input[name="payment"]:checked').value === 'sbp' ? 'Я оплатил' : 'Подтвердить заказ';
+  }
+}
+
+// ============ Toast-уведомления ============
+let toastTimer;
+function showToast(msg, type='info'){
+  const t = $('toast');
+  t.textContent = msg;
+  t.className = 'toast show ' + type;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+// ============ Навигация ============
+function scrollToSection(id){
+  const el = $(id);
+  if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+  $('menu').classList.remove('open');
+  $('burgerBtn').setAttribute('aria-expanded', 'false');
+}
+
+function toggleMenu(){
+  const menu = $('menu');
+  const btn = $('burgerBtn');
+  menu.classList.toggle('open');
+  btn.setAttribute('aria-expanded', menu.classList.contains('open') ? 'true' : 'false');
+}
+
+// ============ Клавиатурная навигация ============
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape'){
+    closeModal('cartModal');
+    closeModal('checkoutModal');
+  }
+});
+
+// ============ Инициализация (reactive подписка) ============
+store.subscribe(() => {
+  renderToys();
+  renderCart();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderToys();
+  renderCart();
+});
+</script>
+</body>
+</html>
